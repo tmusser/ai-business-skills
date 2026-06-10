@@ -12,3 +12,4 @@
 8. Authored the six front-door skills with consistent frontmatter, lean guardrails, and outcome-first output shapes.
 9. Ran a custom validation script to verify expected files, skill frontmatter, skill-name matching, README links, balanced Markdown fences, and the six-skill limit.
 10. Initialized git and created the requested initial commit: `Create Cowork-first ai-business-skills`.
+11. Rewrote commit authors to `tmusser`, created the GitHub repository `tmusser/ai-business-skills`, and pushed `main`.

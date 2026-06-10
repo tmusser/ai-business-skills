@@ -27,7 +27,7 @@ Create a Cowork-first repo for business users that ships six lean skills and vis
 
 - All four planned slices are complete.
 - Validation passed.
-- Git repo initialized and baseline commit created.
+- Git repo initialized, commit authors rewritten to `tmusser`, and the GitHub repo is live at `https://github.com/tmusser/ai-business-skills`.
 
 ## Changed Files
 
@@ -64,6 +64,7 @@ Create a Cowork-first repo for business users that ships six lean skills and vis
 - `python3 - <<'PY' ... PY`
 - `git status --short`
 - `git log --oneline --decorate -n 3`
+- `gh repo create tmusser/ai-business-skills --private --description "Claude skills for turning messy business context into clear asks, decisions, owners, updates, and follow-ups." --source=. --remote=origin --push`
 
 ## Known Failing Commands
 

@@ -6,6 +6,8 @@ Task: build `ai-business-skills` v0.1 companion repo
 
 Result: pass
 
+GitHub repo: [`tmusser/ai-business-skills`](https://github.com/tmusser/ai-business-skills)
+
 Commands run:
 
 1. `find . -type f | sort`
@@ -28,7 +30,19 @@ Commands run:
 
 4. `git add . && git commit -m "Create Cowork-first ai-business-skills"`
    Result: pass
-   Evidence: root commit `5bea61e`
+   Evidence: root commit `17c39aa`
+
+5. `gh repo create tmusser/ai-business-skills --private --description "Claude skills for turning messy business context into clear asks, decisions, owners, updates, and follow-ups." --source=. --remote=origin --push`
+   Result: pass
+   Evidence: remote repository created and `main` pushed
+
+6. `git filter-branch --env-filter ... -- --all`
+   Result: pass
+   Evidence: commits rewritten so author and committer are `tmusser`
+
+7. `git log --format=fuller -n 2`
+   Result: pass
+   Evidence: current HEAD reflects the rewritten author metadata
 
 Changed files:
 
