@@ -3,11 +3,11 @@
 - [x] Slice 1: control artifacts and proof-doc scaffold
 - [x] Slice 2: repo shell for business users
 - [x] Slice 3: six front-door skills
-- [ ] Slice 4: contract verification and handoff
+- [x] Slice 4: contract verification and handoff
 
 ## Active Task
 
-Slice 4: contract verification and handoff
+Completed
 
 ## Scope Freeze
 

@@ -10,3 +10,5 @@
 6. Created proof-doc scaffolding in `docs/` so the repo visibly records how it was built.
 7. Built the business-user repo shell: `README.md`, `AGENTS.md`, checklist, source packet, templates, and examples.
 8. Authored the six front-door skills with consistent frontmatter, lean guardrails, and outcome-first output shapes.
+9. Ran a custom validation script to verify expected files, skill frontmatter, skill-name matching, README links, balanced Markdown fences, and the six-skill limit.
+10. Initialized git and created the requested initial commit: `Create Cowork-first ai-business-skills`.
