@@ -11,6 +11,7 @@ Use status-update.
 Summarize this week's delivery status for an executive audience.
 Call out progress, blockers, asks, and the next milestone.
 Then give me a manager version if the tone should be slightly more detailed.
+Make the executive version short, direct, and ready to forward.
 ```
 
 ## Useful Output Shape

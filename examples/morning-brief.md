@@ -10,6 +10,7 @@ You are about to join a product review and want the fastest useful catch-up from
 Use brief-me.
 Check Slack since yesterday afternoon, today's calendar, the notes pasted below, and the checkout reliability epic.
 Tell me what changed, what needs my response, risks, and what I should prep before the 10:30 review.
+Keep it to the most important items, and flag anything that needs a response before the meeting.
 ```
 
 ## Useful Output Shape

@@ -26,7 +26,7 @@ Commands run:
 
 3. `git init`
    Result: pass
-   Evidence: repository initialized at `/Users/thomas.musser/code/ai-business-skills/.git/`
+   Evidence: repository initialized locally in the workspace
 
 4. `git add . && git commit -m "Create Cowork-first ai-business-skills"`
    Result: pass
@@ -46,31 +46,31 @@ Commands run:
 
 Changed files:
 
-- [`README.md`](/Users/thomas.musser/code/ai-business-skills/README.md)
-- [`AGENTS.md`](/Users/thomas.musser/code/ai-business-skills/AGENTS.md)
-- [`SPEC.md`](/Users/thomas.musser/code/ai-business-skills/SPEC.md)
-- [`PLAN.md`](/Users/thomas.musser/code/ai-business-skills/PLAN.md)
-- [`TODO.md`](/Users/thomas.musser/code/ai-business-skills/TODO.md)
-- [`checklists/clarity-check.md`](/Users/thomas.musser/code/ai-business-skills/checklists/clarity-check.md)
-- [`references/source-packet.md`](/Users/thomas.musser/code/ai-business-skills/references/source-packet.md)
-- [`templates/ACTIONS.md`](/Users/thomas.musser/code/ai-business-skills/templates/ACTIONS.md)
-- [`templates/DECISIONS.md`](/Users/thomas.musser/code/ai-business-skills/templates/DECISIONS.md)
-- [`templates/UPDATE.md`](/Users/thomas.musser/code/ai-business-skills/templates/UPDATE.md)
-- [`examples/morning-brief.md`](/Users/thomas.musser/code/ai-business-skills/examples/morning-brief.md)
-- [`examples/post-meeting-follow-up.md`](/Users/thomas.musser/code/ai-business-skills/examples/post-meeting-follow-up.md)
-- [`examples/decision-with-data.md`](/Users/thomas.musser/code/ai-business-skills/examples/decision-with-data.md)
-- [`examples/leadership-status-update.md`](/Users/thomas.musser/code/ai-business-skills/examples/leadership-status-update.md)
-- [`skills/brief-me/SKILL.md`](/Users/thomas.musser/code/ai-business-skills/skills/brief-me/SKILL.md)
-- [`skills/clear-ask/SKILL.md`](/Users/thomas.musser/code/ai-business-skills/skills/clear-ask/SKILL.md)
-- [`skills/meeting-to-actions/SKILL.md`](/Users/thomas.musser/code/ai-business-skills/skills/meeting-to-actions/SKILL.md)
-- [`skills/decision-brief/SKILL.md`](/Users/thomas.musser/code/ai-business-skills/skills/decision-brief/SKILL.md)
-- [`skills/status-update/SKILL.md`](/Users/thomas.musser/code/ai-business-skills/skills/status-update/SKILL.md)
-- [`skills/follow-up-draft/SKILL.md`](/Users/thomas.musser/code/ai-business-skills/skills/follow-up-draft/SKILL.md)
-- [`docs/BUILD_LOG.md`](/Users/thomas.musser/code/ai-business-skills/docs/BUILD_LOG.md)
-- [`docs/CREATION_INVOCATIONS.md`](/Users/thomas.musser/code/ai-business-skills/docs/CREATION_INVOCATIONS.md)
-- [`docs/DESIGN_DECISIONS.md`](/Users/thomas.musser/code/ai-business-skills/docs/DESIGN_DECISIONS.md)
-- [`docs/VERIFY.md`](/Users/thomas.musser/code/ai-business-skills/docs/VERIFY.md)
-- [`docs/HANDOFF.md`](/Users/thomas.musser/code/ai-business-skills/docs/HANDOFF.md)
+- [`README.md`](../README.md)
+- [`AGENTS.md`](../AGENTS.md)
+- [`SPEC.md`](../SPEC.md)
+- [`PLAN.md`](../PLAN.md)
+- [`TODO.md`](../TODO.md)
+- [`checklists/clarity-check.md`](../checklists/clarity-check.md)
+- [`references/source-packet.md`](../references/source-packet.md)
+- [`templates/ACTIONS.md`](../templates/ACTIONS.md)
+- [`templates/DECISIONS.md`](../templates/DECISIONS.md)
+- [`templates/UPDATE.md`](../templates/UPDATE.md)
+- [`examples/morning-brief.md`](../examples/morning-brief.md)
+- [`examples/post-meeting-follow-up.md`](../examples/post-meeting-follow-up.md)
+- [`examples/decision-with-data.md`](../examples/decision-with-data.md)
+- [`examples/leadership-status-update.md`](../examples/leadership-status-update.md)
+- [`skills/brief-me/SKILL.md`](../skills/brief-me/SKILL.md)
+- [`skills/clear-ask/SKILL.md`](../skills/clear-ask/SKILL.md)
+- [`skills/meeting-to-actions/SKILL.md`](../skills/meeting-to-actions/SKILL.md)
+- [`skills/decision-brief/SKILL.md`](../skills/decision-brief/SKILL.md)
+- [`skills/status-update/SKILL.md`](../skills/status-update/SKILL.md)
+- [`skills/follow-up-draft/SKILL.md`](../skills/follow-up-draft/SKILL.md)
+- [`docs/BUILD_LOG.md`](./BUILD_LOG.md)
+- [`docs/CREATION_INVOCATIONS.md`](./CREATION_INVOCATIONS.md)
+- [`docs/DESIGN_DECISIONS.md`](./DESIGN_DECISIONS.md)
+- [`docs/VERIFY.md`](./VERIFY.md)
+- [`docs/HANDOFF.md`](./HANDOFF.md)
 
 Remaining risks:
 
@@ -79,3 +79,37 @@ Remaining risks:
 Next safest task:
 
 - Add one lightweight prompt-quality review pass across the four example workflows without expanding the six-skill surface.
+
+## 2026-06-09 Public Polish
+
+Task: fix public links and improve first-run examples
+
+Result: pass
+
+Commands run:
+
+1. `python3 - <<'PY' ... PY`
+   Result: pass
+   Evidence: no public-facing markdown links in the scoped files point at local filesystem paths.
+
+2. `python3 - <<'PY' ... PY`
+   Result: pass
+   Evidence: Markdown code fences remain balanced in `README.md`, `docs/CREATION_INVOCATIONS.md`, `docs/VERIFY.md`, and all `examples/*.md` files.
+
+Changed files:
+
+- [`README.md`](../README.md)
+- [`docs/CREATION_INVOCATIONS.md`](./CREATION_INVOCATIONS.md)
+- [`docs/VERIFY.md`](./VERIFY.md)
+- [`examples/morning-brief.md`](../examples/morning-brief.md)
+- [`examples/post-meeting-follow-up.md`](../examples/post-meeting-follow-up.md)
+- [`examples/decision-with-data.md`](../examples/decision-with-data.md)
+- [`examples/leadership-status-update.md`](../examples/leadership-status-update.md)
+
+Remaining risks:
+
+- The examples are still lightweight prompts, so the last mile depends on the quality of the user’s pasted context.
+
+Next safest task:
+
+- Leave the six skill files unchanged unless a later prompt-quality pass shows a real need for default output shape tweaks.

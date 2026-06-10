@@ -9,6 +9,7 @@ You have a Zoom transcript and rough notes from a launch meeting. You need a cle
 ```text
 Use meeting-to-actions on the transcript below.
 Then draft a warm follow-up I can send to the launch group with the decisions, owners, due dates, and open blocker.
+Make it copy-paste ready and keep it short enough to send without editing a lot.
 ```
 
 ## Useful Output Shape
