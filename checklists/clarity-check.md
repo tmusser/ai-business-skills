@@ -10,3 +10,6 @@ Use this before sending an output.
 - Are assumptions labeled?
 - Is the next action obvious?
 - Are source gaps noted?
+- Is the conversation state clear enough to support the suggested response?
+- Are stakeholder sensitivities or possible misreads noted when relevant?
+- Is the output grounded in source-backed facts before assumptions?

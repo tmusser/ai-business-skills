@@ -106,6 +106,7 @@ Helpful supporting files:
 
 - [clarity-check.md](checklists/clarity-check.md)
 - [source-packet.md](references/source-packet.md)
+- [CONVERSATION_STATE.md](templates/CONVERSATION_STATE.md)
 - [ACTIONS.md](templates/ACTIONS.md)
 - [DECISIONS.md](templates/DECISIONS.md)
 - [UPDATE.md](templates/UPDATE.md)

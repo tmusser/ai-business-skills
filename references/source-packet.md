@@ -16,9 +16,13 @@ Source gaps:
 - ...
 
 Confidence:
-- High:
-- Medium:
-- Low:
+- High confidence:
+- Medium confidence:
+- Low confidence:
+
+- Assumptions:
+- Missing context / source gaps:
+- Stakeholder context or sensitivities:
 ```
 
 Guidance:
@@ -26,5 +30,7 @@ Guidance:
 - Read before write.
 - Prefer small windows like "since yesterday", "this week", "since the last meeting", or "this thread".
 - Separate source-backed facts from assumptions and suggestions.
+- Track source confidence explicitly when the context is mixed or incomplete.
+- Surface stakeholder context when it affects tone, risk, or interpretation.
 - Surface missing or stale inputs.
 - Summarize into decisions, actions, risks, asks, and follow-ups instead of dumping raw source content.
