@@ -1,6 +1,6 @@
 ## Objective
 
-Create `ai-business-skills`, a Cowork-first companion repo to `ai-engineering-skills` that helps business users turn messy context into clear asks, decisions, owners, updates, and follow-ups.
+Create `ai-business-skills`, portable work coordination skills for messy workplace conversations that help business users turn signal into clear asks, decisions, owners, updates, and follow-ups.
 
 ## Audience
 
@@ -24,7 +24,7 @@ Create `ai-business-skills`, a Cowork-first companion repo to `ai-engineering-sk
 1. The expected repo structure exists with the required files.
 2. Each skill file has valid YAML frontmatter with `name` and `description`.
 3. Skill names match folder names.
-4. The README leads with business use cases and examples instead of architecture.
+4. The README leads with conversation-state framing, async-meeting handling, and practical examples instead of architecture.
 5. Connector mechanics stay in the background and appear only as optional input sources.
 6. Proof artifacts document `$mini-spec`, `$thin-plan`, `$scope-freeze`, `$build-one`, `$test-mini`, `$verify-contract`, and `$handoff`.
 7. Verification evidence is recorded in `docs/VERIFY.md`.

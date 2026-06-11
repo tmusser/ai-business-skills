@@ -1,48 +1,87 @@
 # ai-business-skills
 
-Claude skills for turning messy business context into clear asks, decisions, owners, updates, and follow-ups.
+AI skills for turning messy workplace conversations into clear context, next actions, and context-aware replies.
 
-`ai-business-skills` is a Cowork-first companion to `ai-engineering-skills`. It works with pasted context and with connected tools when available, while keeping the user-facing experience focused on outcomes instead of connector mechanics.
-
-If you are new here, start with `brief-me` and the morning brief example.
+Use it when a Slack thread, email chain, meeting transcript, doc comment, Jira discussion, or project conversation contains signal, but not yet a clean ask, decision, owner, update, or follow-up.
 
 ## Use It When...
 
-- Before a meeting and you need a fast catch-up
-- After a meeting and you need owners, deadlines, and follow-ups
-- Slack or Gmail context is messy and you need the signal
-- A decision needs a crisp one-page brief
-- A stakeholder update needs to be sent without sounding vague
+- A Slack thread, email chain, or meeting transcript needs a fast catch-up
+- Someone asked a vague question and you need to clarify the ask
+- A conversation has decisions, owners, deadlines, blockers, or open loops
+- You need to draft the next context-aware reply
+- You need to brief other people on what changed
 
-## Example Workflows
+## Try This First
 
-```text
-brief-me -> meeting-to-actions -> follow-up-draft -> status-update
-```
+Paste messy notes, a transcript, or connected context into Claude/Cowork and ask:
 
 ```text
-brief-me -> decision-brief -> follow-up-draft
+Use brief-me. Catch me up on what changed, what needs my response, risks/blockers, and suggested follow-ups.
 ```
+
+## What This Is
+
+This repo is for the work before the work:
+
+- understand what people said
+- identify what changed
+- separate facts from assumptions
+- clarify the ask
+- preserve open loops
+- draft the next context-aware response
+
+## What This Is Not
+
+This is not a deck generator, project-management framework, or heavy artifact factory.
+
+## Product Model
 
 ```text
-clear-ask -> follow-up-draft
+messy conversation -> conversation state -> context-aware response
 ```
 
-## Start With Examples
+| Primitive | Meaning |
+| --- | --- |
+| Context packet | What was said, by whom, from where, and what matters |
+| Action state | Decisions, owners, deadlines, blockers, and open questions |
+| Response draft | The next message, written with the right context and tone |
 
-- [Morning brief](./examples/morning-brief.md)
-- [Post-meeting follow-up](./examples/post-meeting-follow-up.md)
-- [Decision with data](./examples/decision-with-data.md)
-- [Leadership status update](./examples/leadership-status-update.md)
+## Workflows
 
-## Skills
+| Workflow | User question | Skill |
+| --- | --- | --- |
+| Catch up | What did I miss? | `brief-me` |
+| Clarify | What are they actually asking? | `clear-ask` |
+| Groom | What are the actions and open loops? | `meeting-to-actions` |
+| Decide | What decision is needed? | `decision-brief` |
+| Respond | What should I say back? | `follow-up-draft` |
+| Broadcast | What should others know? | `status-update` |
 
-- [`brief-me`](./skills/brief-me/SKILL.md): catch up from messy context and surface what needs attention
-- [`clear-ask`](./skills/clear-ask/SKILL.md): turn vague business context into a crisp ask
-- [`meeting-to-actions`](./skills/meeting-to-actions/SKILL.md): turn meetings into decisions, owners, dates, blockers, and follow-ups
-- [`decision-brief`](./skills/decision-brief/SKILL.md): turn messy context and evidence into a one-page recommendation
-- [`status-update`](./skills/status-update/SKILL.md): create concise updates for different audiences
-- [`follow-up-draft`](./skills/follow-up-draft/SKILL.md): draft concise Slack or email follow-ups
+## Async Meetings
+
+Many workplace meetings do not happen in Zoom.
+
+A Slack thread, Gmail chain, Google Doc comment thread, Jira discussion, or Confluence page can contain the same things a live meeting does:
+
+- decisions
+- objections
+- owner changes
+- implied deadlines
+- unresolved questions
+- stakeholder sensitivities
+- political or contextual tone
+
+These skills process async conversations the same way you would process a meeting: extract state, identify open loops, and draft the next context-aware response.
+
+## Operating Modes
+
+| Mode | Behavior |
+| --- | --- |
+| Pasted-only mode | Use only text the user pasted |
+| Connected-context mode | Read approved tools like Gmail, Slack, Calendar, Docs, Jira, or Confluence when available |
+| Draft-only mode | Produce messages, updates, or follow-ups without sending or publishing |
+| Action mode | Mutate systems only when the user explicitly asks |
 
 ## Supported Context
 
@@ -50,7 +89,14 @@ Use pasted notes, Zoom transcripts, Slack, Gmail, Calendar, Atlassian, and Hex o
 
 By default, these skills read and draft. They do not send messages, create events, update tickets, or publish outputs unless you explicitly ask.
 
-Shared guidance for mixed-source inputs lives in [source-packet.md](./references/source-packet.md).
+Shared guidance for mixed-source inputs lives in [source-packet.md](references/source-packet.md).
+
+## Examples
+
+- [Morning brief](examples/morning-brief.md)
+- [Post-meeting follow-up](examples/post-meeting-follow-up.md)
+- [Decision with data](examples/decision-with-data.md)
+- [Leadership status update](examples/leadership-status-update.md)
 
 ## Keep It Practical
 
@@ -58,17 +104,17 @@ Every skill is designed to produce something you can send, decide from, or act o
 
 Helpful supporting files:
 
-- [clarity-check.md](./checklists/clarity-check.md)
-- [source-packet.md](./references/source-packet.md)
-- [ACTIONS.md](./templates/ACTIONS.md)
-- [DECISIONS.md](./templates/DECISIONS.md)
-- [UPDATE.md](./templates/UPDATE.md)
+- [clarity-check.md](checklists/clarity-check.md)
+- [source-packet.md](references/source-packet.md)
+- [ACTIONS.md](templates/ACTIONS.md)
+- [DECISIONS.md](templates/DECISIONS.md)
+- [UPDATE.md](templates/UPDATE.md)
 
 ## How This Repo Was Built
 
-This companion repo was built using `ai-engineering-skills` as the control layer.
+This repo was built using `ai-engineering-skills` as the control layer.
 
-- [BUILD_LOG.md](./docs/BUILD_LOG.md)
-- [CREATION_INVOCATIONS.md](./docs/CREATION_INVOCATIONS.md)
-- [DESIGN_DECISIONS.md](./docs/DESIGN_DECISIONS.md)
-- [VERIFY.md](./docs/VERIFY.md)
+- [BUILD_LOG.md](docs/BUILD_LOG.md)
+- [CREATION_INVOCATIONS.md](docs/CREATION_INVOCATIONS.md)
+- [DESIGN_DECISIONS.md](docs/DESIGN_DECISIONS.md)
+- [VERIFY.md](docs/VERIFY.md)
