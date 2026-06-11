@@ -175,3 +175,36 @@ Remaining risks:
 Next safest task:
 
 - Keep the repo lean unless future feedback shows a real need for another discoverability cue.
+
+## 2026-06-11 Example Demos
+
+Task: convert examples into before/after demos
+
+Result: pass
+
+Commands run:
+
+1. `for f in examples/*.md; do echo "==== $f"; rg -n '^# |^## Messy Input|^## What The Skill Notices|^## Clean Output|^## Why This Is Better Than A Generic AI Reply|^## Source Gaps' "$f"; done`
+   Result: pass
+   Evidence: every example includes the required before/after sections.
+
+2. `python3 - <<'PY' ... PY`
+   Result: pass
+   Evidence: all six examples have the required sections; `async-slack-clear-ask.md` proves async Slack handling; `gmail-buried-obligation.md` proves buried obligation detection.
+
+Changed files:
+
+- [`examples/morning-brief.md`](../examples/morning-brief.md)
+- [`examples/post-meeting-follow-up.md`](../examples/post-meeting-follow-up.md)
+- [`examples/decision-with-data.md`](../examples/decision-with-data.md)
+- [`examples/leadership-status-update.md`](../examples/leadership-status-update.md)
+- [`examples/async-slack-clear-ask.md`](../examples/async-slack-clear-ask.md)
+- [`examples/gmail-buried-obligation.md`](../examples/gmail-buried-obligation.md)
+
+Remaining risks:
+
+- The examples are illustrative and do not depend on real connector access, so real-world context quality still matters.
+
+Next safest task:
+
+- Keep the example set stable unless a future pass needs to show another common conversation shape.
