@@ -97,6 +97,8 @@ Shared guidance for mixed-source inputs lives in [source-packet.md](references/s
 - [Post-meeting follow-up](examples/post-meeting-follow-up.md)
 - [Decision with data](examples/decision-with-data.md)
 - [Leadership status update](examples/leadership-status-update.md)
+- [Async Slack clear ask](examples/async-slack-clear-ask.md)
+- [Gmail buried obligation](examples/gmail-buried-obligation.md)
 
 ## Keep It Practical
 

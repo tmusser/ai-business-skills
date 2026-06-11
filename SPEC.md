@@ -11,7 +11,7 @@ Create `ai-business-skills`, portable work coordination skills for messy workpla
 - Customer-facing teams
 - Cross-functional leads using Claude/Cowork
 
-## v0.1 Scope
+## Current Scope
 
 - Ship six visible skills: `brief-me`, `clear-ask`, `meeting-to-actions`, `decision-brief`, `status-update`, `follow-up-draft`
 - Add one shared source-packet reference for optional connected context
@@ -56,4 +56,4 @@ Open the README, choose one example workflow, inspect one skill, and confirm the
 
 ## Open Questions
 
-- No blocker for v0.1. Future work can decide whether to add tests or packaging once the content shape is stable.
+- No blocker for v0.2. Future work can decide whether to add tests or packaging once the content shape is stable.

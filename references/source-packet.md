@@ -20,9 +20,14 @@ Confidence:
 - Medium confidence:
 - Low confidence:
 
-- Assumptions:
-- Missing context / source gaps:
-- Stakeholder context or sensitivities:
+Assumptions:
+- ...
+
+Missing context / source gaps:
+- ...
+
+Stakeholder sensitivities:
+- ...
 ```
 
 Guidance:
