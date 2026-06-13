@@ -149,6 +149,7 @@ Shared guidance for mixed-source inputs lives in [source-packet.md](references/s
 
 ## Examples
 
+- [Messy thread to follow-up](examples/messy-thread-to-follow-up.md)
 - [Morning brief](examples/morning-brief.md)
 - [Post-meeting follow-up](examples/post-meeting-follow-up.md)
 - [Decision with data](examples/decision-with-data.md)
