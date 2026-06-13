@@ -202,6 +202,6 @@ This repo was built using `ai-engineering-skills` as the control layer.
 - [DESIGN_DECISIONS.md](docs/DESIGN_DECISIONS.md)
 - [VERIFY.md](docs/VERIFY.md)
 
-## Part of the Suite
+## Part of the suite
 
-This repo is one of three proof artifacts in a small suite. See the [suite map](docs/SUITE_MAP.md) for how `ai-engineering-skills`, `ai-business-skills`, and `chart-contract` fit together.
+This repo is one piece of a small set of repos for making AI-assisted work clearer, more bounded, and more verifiable. See [Suite map](docs/SUITE_MAP.md).

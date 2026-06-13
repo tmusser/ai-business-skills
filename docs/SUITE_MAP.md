@@ -2,8 +2,6 @@
 
 A small set of repos for making AI-assisted work clearer, more bounded, and more verifiable.
 
-These are related proof artifacts, not isolated repos.
-
 ## ai-engineering-skills
 
 - Audience: technical builders using coding agents.
@@ -21,8 +19,8 @@ These are related proof artifacts, not isolated repos.
 
 ## Same operating philosophy
 
-- Clarify first
-- Constrain scope
-- Expose assumptions
-- Verify before sharing
-- Preserve handoff state
+- Clarify first.
+- Constrain scope.
+- Expose assumptions.
+- Verify before sharing.
+- Preserve handoff state.
