@@ -2,7 +2,7 @@
 
 ## Resume Packet
 
-Read [`SPEC.md`](../SPEC.md), [`PLAN.md`](../PLAN.md), [`TODO.md`](../TODO.md), and [`docs/VERIFY.md`](./VERIFY.md) before continuing.
+Read [`SPEC.md`](process/SPEC.md), [`PLAN.md`](process/PLAN.md), [`TODO.md`](process/TODO.md), and [`docs/VERIFY.md`](./VERIFY.md) before continuing.
 
 Confirm:
 - current phase
@@ -31,9 +31,9 @@ Create a Cowork-first repo for business users that ships six lean skills and vis
 
 ## Changed Files
 
-- [`SPEC.md`](../SPEC.md): repo objective, scope, and acceptance criteria
-- [`PLAN.md`](../PLAN.md): four-slice implementation plan
-- [`TODO.md`](../TODO.md): task tracker with all slices complete
+- [`SPEC.md`](process/SPEC.md): repo objective, scope, and acceptance criteria
+- [`PLAN.md`](process/PLAN.md): four-slice implementation plan
+- [`TODO.md`](process/TODO.md): task tracker with all slices complete
 - [`README.md`](../README.md): business-user-friendly entry point with examples and proof links
 - [`AGENTS.md`](../AGENTS.md): short behavioral guidance for agents
 - [`checklists/clarity-check.md`](../checklists/clarity-check.md): send-readiness checklist

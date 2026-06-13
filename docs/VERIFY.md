@@ -48,9 +48,9 @@ Changed files:
 
 - [`README.md`](../README.md)
 - [`AGENTS.md`](../AGENTS.md)
-- [`SPEC.md`](../SPEC.md)
-- [`PLAN.md`](../PLAN.md)
-- [`TODO.md`](../TODO.md)
+- [`SPEC.md`](process/SPEC.md)
+- [`PLAN.md`](process/PLAN.md)
+- [`TODO.md`](process/TODO.md)
 - [`checklists/clarity-check.md`](../checklists/clarity-check.md)
 - [`references/source-packet.md`](../references/source-packet.md)
 - [`templates/ACTIONS.md`](../templates/ACTIONS.md)

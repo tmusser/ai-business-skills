@@ -4,6 +4,14 @@ Paste a messy thread or notes; get the clean ask, decision, owner, risk, and rep
 
 Use it when a Slack thread, email chain, meeting transcript, doc comment, Jira discussion, or project conversation contains signal, but not yet a clean ask, decision, owner, update, or follow-up.
 
+## What it does in 30 seconds
+
+| Messy context | Clean output |
+| --- | --- |
+| A Slack thread with disagreement, legal uncertainty, support readiness risk, a 3pm deadline, and no named decision owner | Clean ask, decision needed, owner gap, risk, and a reply draft you can paste |
+
+This is the small promise of the repo: turn messy workplace context into the next clear move without pretending uncertainty is resolved.
+
 ## Use It When...
 
 - A Slack thread, email chain, or meeting transcript needs a fast catch-up
@@ -201,6 +209,7 @@ This repo was built using `ai-engineering-skills` as the control layer.
 - [CREATION_INVOCATIONS.md](docs/CREATION_INVOCATIONS.md)
 - [DESIGN_DECISIONS.md](docs/DESIGN_DECISIONS.md)
 - [VERIFY.md](docs/VERIFY.md)
+- [Process artifacts](docs/process/README.md)
 
 ## Part of the suite
 
