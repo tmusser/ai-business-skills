@@ -8,9 +8,9 @@ Use it when a Slack thread, email chain, meeting transcript, doc comment, Jira d
 
 | Messy context | Clean output |
 | --- | --- |
-| A Slack thread with disagreement, legal uncertainty, support readiness risk, a 3pm deadline, and no named decision owner | Clean ask, decision needed, owner gap, risk, and a reply draft you can paste |
+| A workplace thread with disagreement, legal uncertainty, support readiness risk, a soft deadline, and no named decision owner | Clean ask, decision needed, owner gap, risk/tone note, and a reply draft you can paste |
 
-This is the small promise of the repo: turn messy workplace context into the next clear move without pretending uncertainty is resolved.
+The promise is small: turn messy business context into the next clear move without pretending uncertainty is resolved.
 
 ## Use It When...
 
@@ -47,6 +47,12 @@ Full version: [examples/messy-thread-to-follow-up.md](examples/messy-thread-to-f
 ```
 
 Shareable one-pager: [docs/one-pager.md](docs/one-pager.md)
+
+## Works with pasted context
+
+These are plain-text skills, so the lowest-friction mode is copy/paste: paste the thread, note, email, transcript, or doc excerpt into your AI tool and ask for the skill by name.
+
+The tested path is Claude/Cowork-style skills. The underlying `SKILL.md` files can also be adapted as reusable prompts for ChatGPT, Gemini, Codex-style agents, or internal AI assistants. No connector is required for pasted-context mode.
 
 ## Use these skills
 
@@ -85,52 +91,11 @@ This repo is for the work before the work:
 
 This is not a deck generator, project-management framework, or heavy artifact factory.
 
-```mermaid
-%%{init: {"theme": "base", "themeVariables": {"fontFamily": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif", "primaryColor": "#F8FAFC", "primaryTextColor": "#0F172A", "primaryBorderColor": "#CBD5E1", "lineColor": "#64748B", "secondaryColor": "#EEF6FF", "tertiaryColor": "#FFF7ED"}}}%%
-flowchart LR
-  subgraph messy["Messy workplace conversation"]
-    slack["Slack thread"]
-    email["Email chain"]
-    meeting["Meeting transcript"]
-    doc["Doc comments"]
-    ticket["Jira / Confluence discussion"]
-  end
+## How it works
 
-  subgraph state["Conversation state"]
-    context["Context packet<br/><span style='font-size:12px'>what was said, by whom, from where, and what matters</span>"]
-    action["Action state<br/><span style='font-size:12px'>decisions, owners, deadlines, blockers, open questions</span>"]
-    confidence["Source confidence<br/><span style='font-size:12px'>facts, assumptions, source gaps, stakeholder sensitivities</span>"]
-  end
-
-  subgraph response["Context-aware response"]
-    reply["Reply draft"]
-    followup["Follow-up"]
-    update["Status update"]
-    decision["Decision snapshot"]
-  end
-
-  slack --> context
-  email --> context
-  meeting --> context
-  doc --> context
-  ticket --> context
-
-  context --> action
-  action --> confidence
-
-  confidence --> reply
-  confidence --> followup
-  confidence --> update
-  confidence --> decision
-
-  classDef input fill:#F8FAFC,stroke:#CBD5E1,color:#0F172A,stroke-width:1px;
-  classDef core fill:#EEF6FF,stroke:#60A5FA,color:#0F172A,stroke-width:1.5px;
-  classDef output fill:#FFF7ED,stroke:#FDBA74,color:#0F172A,stroke-width:1px;
-
-  class slack,email,meeting,doc,ticket input;
-  class context,action,confidence core;
-  class reply,followup,update,decision output;
-```
+| Input | State extracted | Output |
+| --- | --- | --- |
+| Slack thread, email chain, meeting transcript, doc comment, or Jira/Confluence discussion | What changed, clean ask, decision, owner, deadline, blocker, source confidence, and tone risk | Reply draft, follow-up, status update, decision snapshot, or action list |
 
 ## Workflows
 
@@ -181,12 +146,12 @@ Shared guidance for mixed-source inputs lives in [source-packet.md](references/s
 ## Examples
 
 - [Messy thread to follow-up](examples/messy-thread-to-follow-up.md)
-- [Morning brief](examples/morning-brief.md)
-- [Post-meeting follow-up](examples/post-meeting-follow-up.md)
-- [Decision with data](examples/decision-with-data.md)
-- [Leadership status update](examples/leadership-status-update.md)
-- [Async Slack clear ask](examples/async-slack-clear-ask.md)
 - [Gmail buried obligation](examples/gmail-buried-obligation.md)
+- [Leadership status update](examples/leadership-status-update.md)
+- [Post-meeting follow-up](examples/post-meeting-follow-up.md)
+- [Morning brief](examples/morning-brief.md)
+- [Decision with data](examples/decision-with-data.md)
+- [Async Slack clear ask](examples/async-slack-clear-ask.md)
 
 ## Keep It Practical
 
