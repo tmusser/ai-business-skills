@@ -1,6 +1,6 @@
 # ai-business-skills
 
-AI skills for turning messy workplace conversations into clear context, next actions, and context-aware replies.
+Paste a messy thread or notes; get the clean ask, decision, owner, risk, and reply.
 
 Use it when a Slack thread, email chain, meeting transcript, doc comment, Jira discussion, or project conversation contains signal, but not yet a clean ask, decision, owner, update, or follow-up.
 
@@ -20,6 +20,25 @@ Paste messy notes, a transcript, or connected context into Claude/Cowork and ask
 Use brief-me. Catch me up on what changed, what needs my response, risks/blockers, and suggested follow-ups.
 ```
 
+Tiny example:
+
+```text
+Messy input: "Can someone send thoughts on this Slack thread?"
+What it needs: clean ask
+What it needs: owner, risk, reply
+Clean output: "We need a decision by Friday; owner is missing."
+Reply: "Can we confirm the owner and the Friday decision?"
+Full version: [examples/messy-thread-to-follow-up.md](examples/messy-thread-to-follow-up.md)
+```
+
+## Privacy and control
+
+- pasted-only mode uses only pasted text
+- connected-context mode reads only approved tools
+- draft-only mode does not send or publish
+- action mode mutates systems only when explicitly asked
+- Tone safety: helps avoid accidental escalation, fake certainty, overcommitment, and misreading stakeholder sensitivity
+
 ## What This Is
 
 This repo is for the work before the work:
@@ -34,10 +53,6 @@ This repo is for the work before the work:
 ## What This Is Not
 
 This is not a deck generator, project-management framework, or heavy artifact factory.
-
-## How the model works
-
-The model is messy conversation -> conversation state -> context-aware response.
 
 ```mermaid
 %%{init: {"theme": "base", "themeVariables": {"fontFamily": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif", "primaryColor": "#F8FAFC", "primaryTextColor": "#0F172A", "primaryBorderColor": "#CBD5E1", "lineColor": "#64748B", "secondaryColor": "#EEF6FF", "tertiaryColor": "#FFF7ED"}}}%%
@@ -92,12 +107,12 @@ flowchart LR
 | --- | --- | --- |
 | Catch up | What did I miss? | `brief-me` |
 | Clarify | What are they actually asking? | `clear-ask` |
-| Groom | What are the actions and open loops? | `meeting-to-actions` |
+| Extract actions | What are the actions and open loops? | `meeting-to-actions` |
 | Decide | What decision is needed? | `decision-brief` |
 | Respond | What should I say back? | `follow-up-draft` |
 | Broadcast | What should others know? | `status-update` |
 
-## Async Meetings
+## Meeting without a meeting
 
 Many workplace meetings do not happen in Zoom.
 
@@ -115,12 +130,14 @@ These skills process async conversations the same way you would process a meetin
 
 ## Operating Modes
 
-| Mode | Behavior |
+Choose the mode that gives you the right control.
+
+| Mode | You control |
 | --- | --- |
-| Pasted-only mode | Use only text the user pasted |
-| Connected-context mode | Read approved tools like Gmail, Slack, Calendar, Docs, Jira, or Confluence when available |
+| Pasted-only mode | Use only text you pasted |
+| Connected-context mode | Read approved tools like Gmail, Slack, Calendar, Docs, Jira, or Confluence |
 | Draft-only mode | Produce messages, updates, or follow-ups without sending or publishing |
-| Action mode | Mutate systems only when the user explicitly asks |
+| Action mode | Mutate systems only when you explicitly ask |
 
 ## Supported Context
 
